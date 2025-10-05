@@ -47,7 +47,7 @@ app.use("/api/ask", askRoutes);
 app.use("/api/jobs", jobRoutes);
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Resume Parser API" });
+  res.send({ message: "Welcome to Resume Parser API" });
 });
 
 app.use((err, req, res, next) => {
