@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&family=Saira:wght@400;500;600;700;800&family=Lobster+Two:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: 210 40% 98%;
+  --color-surface: 0 0% 100%;
+  --color-border: 214 32% 91%;
+  --color-text: 222 47% 11%;
+  --color-muted: 215 16% 47%;
+  --color-brand: 259 94% 61%;
+  --color-brand-soft: 259 96% 85%;
+  --color-danger: 0 84% 60%;
+  --color-hover: 215 28% 90%;
+  --color-success: 142 76% 36%;
+  --color-success-soft: 142 76% 90%;
+}
+
+.dark {
+  --color-bg: 0 0% 0%;
+  --color-surface: 0 0% 3%;
+  --color-border: 0 0% 10%;
+  --color-text: 0 0% 100%;
+  --color-muted: 0 0% 64%;
+  --color-brand: 259 94% 71%;
+  --color-brand-soft: 259 94% 25%;
+  --color-danger: 0 84% 66%;
+  --color-hover: 0 0% 8%;
+  --color-success: 142 76% 46%;
+  --color-success-soft: 142 76% 15%;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(var(--color-bg));
+  color: hsl(var(--color-text));
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--color-hover));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--color-muted));
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--color-text) / 0.6);
+}
+
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+::selection {
+  background-color: hsl(var(--color-brand));
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--color-hover));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--color-muted));
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--color-text) / 0.6);
+}
+
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+::selection {
+  background-color: hsl(var(--color-brand));
+  color: #ffffff;
+}
